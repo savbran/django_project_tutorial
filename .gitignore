@@ -1,0 +1,4 @@
+/.README.md.html
+*.pyc
+/__pychache__/
+/django_project_1/
