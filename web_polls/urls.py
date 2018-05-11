@@ -3,10 +3,15 @@ Created on 07 mag 2018
 
 @author: saverio
 '''
-from django.conf.urls import url
+from django.urls.conf import path
 
 from . import views
 
+# urlconf
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    # url patterns
+    path('', views.index, name='index'),
+    path('<int:question_id>/', views.detail, name='detail'),
+    path('<int:question_id>/results/', views.results, name='results'),
+    path('<int:question_id>/vote/', views.vote, name='votes'),
 ]
