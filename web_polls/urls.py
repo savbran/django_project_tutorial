@@ -7,6 +7,7 @@ from django.urls.conf import path
 
 from . import views
 
+app_name = 'web_polls'
 # urlconf
 urlpatterns = [
     # url patterns
