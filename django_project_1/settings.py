@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'wordcount.apps.WordcountConfig',
     'web_polls.apps.WebPollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,7 +54,7 @@ ROOT_URLCONF = 'django_project_1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

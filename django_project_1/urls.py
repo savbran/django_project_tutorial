@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.urls.conf import include
 
 # Root urlconf
 urlpatterns = [
     # url patterns to apps of this project
+    path('', include('wordcount.urls')),
     path('polls/', include('web_polls.urls')),
     path('admin/', admin.site.urls),
 ]
